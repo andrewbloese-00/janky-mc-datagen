@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./2d_textures.js"></script>
+    <script>
+
+        const SABER_MATERIALS = [
+            "iron","gold","obsidian"
+        ]
+        const SABER_COLORS = [ 
+            "red","blue","green","orange","purple","yellow"
+        ]
+    
+
+        const links = []
+        for(const hiltMaterial of SABER_MATERIALS){
+                for(const em1 of SABER_MATERIALS){
+                    for(const em2 of SABER_MATERIALS){
+                        for (const color of SABER_COLORS){
+                           links.push(renderKnightSaber2DPNG(hiltMaterial,em1,em2,color))
+                    }
+                }
+            }
+        }
+
+        // let intervalId = setInterval(()=>{
+        //     if(links.length === 0){
+        //         clearInterval(intervalId)
+        //     } else { 
+        //         links.pop().click()
+        //     }
+        // },500)
+
+
+    </script>
+</body>
+</html>

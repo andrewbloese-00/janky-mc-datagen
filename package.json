@@ -1,0 +1,15 @@
+{
+  "name": "mc_model_generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gen": "node index.js" 
+  },
+  "keywords": [],
+  "author": "Andrew Bloese",
+  "license": "MIT",
+  "dependencies": {
+  }
+
+}
